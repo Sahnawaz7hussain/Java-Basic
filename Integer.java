@@ -19,17 +19,17 @@ public class Integer {
         // System.out.println(isPrimeNumber(6));
         // printSqrt(6);
         // System.out.println(giveNthTermFibonacci(4));
-        System.out.println(giveFactoria(6));
+        System.out.println(giveFactorial(6));
 
     }
 
-    public static int giveFactoria(int n) {
+    public static int giveFactorial(int n) {
         if (n == 0 || n == 1) {
             return 1;
         }
         ;
 
-        return n * giveFactoria(n - 1);
+        return n * giveFactorial(n - 1);
     }
 
     public static int giveNthTermFibonacci(int n) {
