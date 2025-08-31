@@ -4,8 +4,8 @@
 
 public class Integer {
     public static void main(String[] args) {
-        int a = 20;
-        int b = 30;
+        // int a = 20;
+        // int b = 30;
         // System.out.println(sum(a,b));
         // System.out.println(substract(a,b));
         // System.out.println(multiplication(a,b));
