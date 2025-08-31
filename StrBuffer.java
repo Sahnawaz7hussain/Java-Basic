@@ -5,7 +5,7 @@ public class StrBuffer {
          * in a flexible way. Unlike regular strings, which cannot be changed, a
          * StringBuffer allows you to add, remove, or change characters efficiently. It
          * is useful when you need to perform many string operations, like building or
-         * editing text.
+         * editing text. It is thread safe
          */
         StringBuffer str1 = new StringBuffer("Sahnawaz");
 
