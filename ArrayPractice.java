@@ -1,9 +1,13 @@
+import java.util.*;
+
 class Main {
     public static void main(String[] args) {
         // System.out.println("Welcome to Array Practice!");
         // createArray(5);
         // create2DArray(4, 5);
-        create3DArray(4, 4, 4);
+        // create3DArray(4, 4, 4);
+        // arrayLength();
+        jaggedArray(5);
     }
 
     public static void createArray(int size) {
@@ -52,6 +56,36 @@ class Main {
                     System.out.print(colVal + " ");
                 }
                 System.out.println();
+            }
+            System.out.println();
+        }
+    }
+
+    public static void arrayLength() {
+        int[] myArray = { 5, 4, 1, 2, 3, 4, 8, 6, 7 };
+        System.out.println(Arrays.toString(myArray));
+    }
+
+    public static void jaggedArray(int rows) {
+        int jaggedArr[][] = new int[rows][];
+
+        for (int i = 0; i < jaggedArr.length; i++) {
+            int cols = (int) (Math.random() * 9) + 1;
+            jaggedArr[i] = new int[cols];
+        }
+        // jaggedArr[0] = new int[5];
+        // jaggedArr[1] = new int[12];
+        // jaggedArr[2] = new int[3];
+
+        for (int row = 0; row < jaggedArr.length; row++) {
+            for (int col = 0; col < jaggedArr[row].length; col++) {
+                jaggedArr[row][col] = (int) (Math.random() * 9);
+            }
+        }
+
+        for (int[] row : jaggedArr) {
+            for (int elem : row) {
+                System.out.print(elem + " ");
             }
             System.out.println();
         }
