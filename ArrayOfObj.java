@@ -2,6 +2,7 @@ class Student {
     int rol;
     String name;
     int marks;
+    static String schoolName = "XYZ School"; // School name will be same for every students
 
     public Student(int rol, String name, int marks) {
         this.rol = rol;
