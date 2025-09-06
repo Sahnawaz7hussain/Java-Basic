@@ -1,3 +1,5 @@
+/*In Java, static variables are shared across all instances of a class, holding a single copy. Static methods belong to the class and can be called without creating an object, accessing only static data. The static space refers to the memory area where static members are stored, allocated when the class is loaded and retained until termination. */
+
 class Student {
     private String name;
     private int roll;
